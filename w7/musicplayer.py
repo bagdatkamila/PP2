@@ -7,11 +7,12 @@ def main():
     pygame.mixer.init(frequency=44100, size=-16, channels=2, buffer=4096)
     screen = pygame.display.set_mode((350, 700))
     pygame.display.set_caption("Music Player")
+    pygame.display.set_icon(pygame.image.load("C://Users//admin//OneDrive//Рабочий стол//pp2//w7//image//Spotify_icon.png"))
     bg = pygame.image.load("C://Users//admin//OneDrive//Рабочий стол//pp2//w7//image//backround.png").convert_alpha()
     
     #пишем кнопки для начального экрана
     myfont = pygame.font.Font("C://Users//admin//OneDrive//Рабочий стол//pp2//w7//image//Roboto-Black.ttf", 60)
-    text = myfont.render("sweater_weather_ready", False, (193, 196, 192))
+    text = myfont.render("ready", False, (193, 196, 192))
     buttom_list = [
         text.get_rect(topleft=(10, 200)),
         text.get_rect(topleft=(10, 300)),
