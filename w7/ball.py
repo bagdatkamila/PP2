@@ -27,21 +27,10 @@ while not done:
             y = 600
         elif x >= 600:
             x = 600
-        
-        
-        """if self.rect.left < 0:
-        self.rect.left = 0
-    if self.rect.right > SCREEN_WIDTH:
-        self.rect.right = SCREEN_WIDTH
-    if self.rect.top <= 0:
-        self.rect.top = 0
-    if self.rect.bottom >= SCREEN_HEIGHT:
-        self.rect.bottom = SCREEN_HEIGHT
-        """
-        
-        screen.fill((255, 255, 255))
-        color = (255, 0, 255)
+          
+        screen.fill((0, 0, 0))
+        color = (250, 0, 0)
         pygame.draw.circle(screen, color, (x, y), 25)
         
         pygame.display.flip()
-        clock.tick(20)
+        clock.tick(20)    
