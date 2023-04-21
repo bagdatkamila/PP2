@@ -67,6 +67,7 @@ class Game:
             self.levelAdding()
 
     def gameOver(self):
+        #бьется на границы
         if self.snake.body[0].x >= 19:
             return True
         if self.snake.body[0].x <= 0:
@@ -76,6 +77,7 @@ class Game:
         if self.snake.body[0].y <= 0:
             return True
         
+        #бьется об саму себя
         for block in self.snake.body[1:]:
             if block == self.snake.body[0]:
                 return True

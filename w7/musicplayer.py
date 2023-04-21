@@ -88,7 +88,7 @@ def main():
                     songs_list[song_counter].stop()
                     
                     if song_counter == 0:
-                        song_counter = 4
+                        song_counter = 2
                     else:
                         song_counter -= 1
                     #тоже чтобы не вышла за грань 
